@@ -138,8 +138,10 @@
       <div>
         <h3>Email Newsletter</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, accusantium?</p>
-        <form>
-          <input type="email" placeholder="Enter Email">
+        <!-- to submit the form on netlify, see netlify forms on net and add name, method and data-netlify as given on the form, also add name="email"  -->
+        <!-- Do the same thing in article1.html and about1.html -->
+        <form name="contact" method="post" data-netlify="true">
+          <input name="email" type="email" placeholder="Enter Email">
           <input type="submit" value="Subscribe" class="btn btn-primary">
         </form>
       </div>
